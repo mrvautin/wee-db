@@ -70,16 +70,15 @@ the matched document.
 An example returned Object:
 
 ``` javascript
-{ 
+{
     count: 1,
-    documents:
-        [ 
-            { 
-                id: 'a8bcb689-52b3-42e9-8f9f-6913c974322e',
-                title: 'A title',
-                body: 'Some body' 
-            } 
-        ] 
+    documents: [
+        {
+            id: 'a8bcb689-52b3-42e9-8f9f-6913c974322e',
+            title: 'A title',
+            body: 'Somebody'
+        }
+    ]
 }
 ```
 
