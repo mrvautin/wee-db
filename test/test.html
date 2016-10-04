@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <script src="https://unpkg.com/lodash@4.16.3/lodash.min.js"></script>
+        <script src="../dist/wee-db.min.js"></script>
+        <script>
+            var db = wee_db('db');
+            db.insert('blog', {title: 'wee_db'}); 
+            console.log(db.find('blog', {title: 'wee_db'}));
+        </script>
+    </head>
+</html>

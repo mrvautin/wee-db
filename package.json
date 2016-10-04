@@ -1,0 +1,49 @@
+{
+  "name": "wee-db",
+  "version": "0.0.1",
+  "description": "A 'wee' and simple embedded JSON database built on `lowdb` with some traditional query benefits/syntax",
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "^4.16.2",
+    "lowdb": "^0.13.1",
+    "uuid": "^2.0.3"
+  },
+  "scripts": {
+    "test": "mocha test/test.js",
+    "uglify": "uglifyjs dist/wee-db.js -o dist/wee-db.min.js",
+    "build": "webpack && npm run uglify"
+  },
+  "keywords": [
+    "wee-db",
+    "db",
+    "flat",
+    "file",
+    "local",
+    "database",
+    "storage",
+    "JSON",
+    "json",
+    "lo-dash",
+    "lodash",
+    "underscore",
+    "embed",
+    "embeddable",
+    "lowdb"
+  ],
+  "author": "Mark Moffat <mrvautin@gmail.com> (http://mrvautin.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrvautin/wee-db.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrvautin/wee-db/issues"
+  },
+  "homepage": "https://github.com/mrvautin/wee-db",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.0",
+    "uglify-js": "^2.7.3",
+    "webpack": "^1.13.2"
+  }
+}
