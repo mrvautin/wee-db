@@ -42,7 +42,7 @@ Running in the browser uses localStorage. It's as simple as:
 ``` html
 <html>
     <head>
-        <script src="https://unpkg.com/lodash@4.16.3/lodash.min.js"></script>
+        <script src="https://unpkg.com/lodash@4/lodash.min.js"></script>
         <script src="dist/wee-db.min.js"></script>
         <script>
             var db = wee_db('db');
@@ -64,7 +64,7 @@ by creating individual `wee-db` instances or you can use `collections` and keep 
 
 All queries take a `collection` as the first parameter and depending on the type of query, the other parameters will vary. See examples.
 
-All queries will return an object with a `count` of documents which matched the criteria and a `documents` array (except `findOne` that returns an Object) containing
+All queries will return an object with a `count` of documents which matched the criteria and a `documents` array (except `findOne` which returns an Object) containing
 the matched document.
 
 An example returned Object:
