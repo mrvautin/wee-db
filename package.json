@@ -6,12 +6,15 @@
   "dependencies": {
     "lodash": "^4.16.2",
     "lowdb": "^0.13.1",
-    "uuid": "^2.0.3"
+    "uuid": "^2.0.3",
+    "snyk": "^1.192.0"
   },
   "scripts": {
     "test": "mocha test/test.js",
     "uglify": "uglifyjs dist/wee-db.js -o dist/wee-db.min.js",
-    "build": "webpack && npm run uglify"
+    "build": "webpack && npm run uglify",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "wee-db",
@@ -45,5 +48,6 @@
     "mocha": "^3.1.0",
     "uglify-js": "^2.7.3",
     "webpack": "^1.13.2"
-  }
+  },
+  "snyk": true
 }
